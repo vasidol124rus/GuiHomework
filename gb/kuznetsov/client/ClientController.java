@@ -1,6 +1,6 @@
 package ru.gb.kuznetsov.client;
 
-import ru.gb.kuznetsov.ServerWindowController;
+import ru.gb.kuznetsov.server.ServerWindowController;
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;

@@ -5,26 +5,21 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class ServerWindowGUI extends JFrame implements ServerWindowView {
-
-    ServerWindowController serverWindowController;
-    private ChatHistoryWindow chatHistoryWindow;
-
+public class ServerWindowGui extends JFrame implements ServerWindowView {
 
     private static final int WINDOW_HEIGHT = 230;
     private static final int WINDOW_WIDTH = 500;
     private static final int POST_X = 850;
     private static final int POST_Y = 200;
-
-
-
+    ServerWindowController serverWindowController;
     JButton btnStart, btnStop;
     JTextArea serverTextArea;
+    private ChatHistoryWindow chatHistoryWindow;
 
-    public ServerWindowGUI() {
+    public ServerWindowGui() {
 
         setDefaultCloseOperation(EXIT_ON_CLOSE);
-        setLocation(POST_X , POST_Y);
+        setLocation(POST_X, POST_Y);
         setSize(WINDOW_WIDTH, WINDOW_HEIGHT);
 
 
@@ -36,7 +31,6 @@ public class ServerWindowGUI extends JFrame implements ServerWindowView {
         setVisible(true);
 
 
-
     }
 
     public void setServerWindowController(ServerWindowController serverWindowController) {
@@ -45,9 +39,9 @@ public class ServerWindowGUI extends JFrame implements ServerWindowView {
 
 
     private void createPanel() {
-        Color backGroundColor = new Color(2,5,85);
-        Color fontColor = new Color(2,155,15);
-        Font font = new Font("Serif",Font.BOLD,15);
+        Color backGroundColor = new Color(2, 5, 85);
+        Color fontColor = new Color(5, 155, 15);
+        Font font = new Font("Serif", Font.BOLD, 15);
         serverTextArea = new JTextArea();
         serverTextArea.setBackground(backGroundColor);
         serverTextArea.setForeground(fontColor);
@@ -59,10 +53,10 @@ public class ServerWindowGUI extends JFrame implements ServerWindowView {
     private Component createButtons() {
         JPanel panel = new JPanel(new GridLayout(1, 2));
         ImageIcon tick = new ImageIcon("src/main/java/org/example/DZ2/Server/Png/tick.png");
-//        btnStart = new JButton("Start");
+        btnStart = new JButton("Start");
         btnStart = new JButton(tick);
         ImageIcon cross = new ImageIcon("src/main/java/org/example/DZ2/Server/Png/cross.png");
-//        btnStop = new JButton("Stop");
+        btnStop = new JButton("Stop");
         btnStop = new JButton(cross);
 
         btnStart.addActionListener(new ActionListener() {
@@ -121,7 +115,6 @@ public class ServerWindowGUI extends JFrame implements ServerWindowView {
     }
 
 
-
     @Override
     public void showMessage(String message) {
         serverTextArea.append(message + "\n");
@@ -134,3 +127,4 @@ public class ServerWindowGUI extends JFrame implements ServerWindowView {
 
 
 }
+

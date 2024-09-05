@@ -6,7 +6,7 @@ public interface ServerWindowView {
 
     void userDisconnectInfo(String username);
 
-    void  showMessage(String message);
+    void showMessage(String message);
 
     void connectToServer();
 }

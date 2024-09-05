@@ -70,7 +70,7 @@ public class ClientGUI extends JFrame implements ClientView {
         password = new JPasswordField("12345");
         ImageIcon login = new ImageIcon("src/main/java/org/example/DZ2/Clients/Png/login.png");
         btnLogin = new JButton(login);
-//        btnLogin = new JButton("login");
+        btnLogin = new JButton("login");
         btnLogin.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -168,4 +168,4 @@ public class ClientGUI extends JFrame implements ClientView {
     }
 
 
-}}
+}
