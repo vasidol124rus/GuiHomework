@@ -10,14 +10,13 @@ public class ClientGUI extends JFrame implements ClientView {
     private static final int OFFSET_STEP = 20;
     private static final int WINDOW_HEIGHT = 330;
     private static final int WINDOW_WIDTH = 500;
-    private static final int POST_X = 100;
-    private static final int POST_Y = 100;
+    private static final int POST_X = 300;
+    private static final int POST_Y = 200;
     private static final String[] USERS = {
-            new ClientInfo("Ivan_Ivanovich").getName(),
-            new ClientInfo("Petr_Petrovich").getName(),
-            new ClientInfo("Vasilisa_Vasilisovna").getName(),
-            new ClientInfo("Zaxar_Zaxarovich").getName(),
-            new ClientInfo("Nicka_Nickolayevna").getName()
+            new ClientInfo("Ivan_Petrov").getName(),
+            new ClientInfo("Vasiliy_Petrovich").getName(),
+            new ClientInfo("Valentina_Lapina").getName()
+
     };
     private static int count = 0;
     private ClientController clientController;

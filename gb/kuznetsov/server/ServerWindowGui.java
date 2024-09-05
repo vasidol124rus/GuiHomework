@@ -7,10 +7,10 @@ import java.awt.event.ActionListener;
 
 public class ServerWindowGui extends JFrame implements ServerWindowView {
 
-    private static final int WINDOW_HEIGHT = 230;
+    private static final int WINDOW_HEIGHT = 350;
     private static final int WINDOW_WIDTH = 500;
-    private static final int POST_X = 850;
-    private static final int POST_Y = 200;
+    private static final int POST_X = 100;
+    private static final int POST_Y = 300;
     ServerWindowController serverWindowController;
     JButton btnStart, btnStop;
     JTextArea serverTextArea;
@@ -52,13 +52,8 @@ public class ServerWindowGui extends JFrame implements ServerWindowView {
 
     private Component createButtons() {
         JPanel panel = new JPanel(new GridLayout(1, 2));
-        ImageIcon tick = new ImageIcon("src/main/java/org/example/DZ2/Server/Png/tick.png");
         btnStart = new JButton("Start");
-        btnStart = new JButton(tick);
-        ImageIcon cross = new ImageIcon("src/main/java/org/example/DZ2/Server/Png/cross.png");
         btnStop = new JButton("Stop");
-        btnStop = new JButton(cross);
-
         btnStart.addActionListener(new ActionListener() {
 
             @Override
