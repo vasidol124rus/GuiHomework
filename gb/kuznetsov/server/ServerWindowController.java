@@ -49,7 +49,7 @@ public class ServerWindowController {
         if (clientController != null) {
             serverUserDisconnectInfo(clientController.getNameFomUser());
             clientController.userDisconnectedByServer();
-//            appendToServerTextArea("Пользователь " + clientController.getNameFomUser() + " отключился.");
+            appendToServerTextArea("Пользователь " + clientController.getNameFomUser() + " отключился.");
         }
     }
 

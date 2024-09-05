@@ -167,4 +167,6 @@ public class ClientGUI extends JFrame implements ClientView {
     }
 
 
+    public void appendMessage(String line) {
+    }
 }

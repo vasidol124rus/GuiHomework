@@ -1,5 +1,7 @@
 package ru.gb.kuznetsov.server;
 
+
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -36,6 +38,7 @@ public class ServerWindowGui extends JFrame implements ServerWindowView {
     public void setServerWindowController(ServerWindowController serverWindowController) {
         this.serverWindowController = serverWindowController;
     }
+
 
 
     private void createPanel() {

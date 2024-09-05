@@ -5,7 +5,7 @@ import java.io.*;
 public class DataBase implements DataBaseView {
 
 
-    private static final String LOG_FILE_PATH = "src/main/java/org/example/DZ2/log.txt";
+    private static final String LOG_FILE_PATH = "src/ru/gb/kuznetsov/DataBase/log.txt";
 
     @Override
     public void writeLog(String txt) {
